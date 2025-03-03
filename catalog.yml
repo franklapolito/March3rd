@@ -1,0 +1,6 @@
+version: 1
+unique_name: TestingDGP2
+object_type: catalog
+label: TestingDGP2
+aggressive_agg_promotion: false
+build_speculative_aggs: true
