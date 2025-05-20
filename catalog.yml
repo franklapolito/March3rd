@@ -1,6 +1,6 @@
 version: 1
-unique_name: TestingDGP2
+unique_name: Q2_25_Demos
 object_type: catalog
-label: TestingDGP2
+label: Q2_25_Demos
 aggressive_agg_promotion: false
 build_speculative_aggs: true
