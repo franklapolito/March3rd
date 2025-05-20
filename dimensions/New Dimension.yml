@@ -1,0 +1,71 @@
+unique_name: New Dimension
+object_type: dimension
+label: New Dimension
+hierarchies:
+  - unique_name: Customer
+    label: Customer
+    levels:
+      - unique_name: Customer Name
+        secondary_attributes:
+          - unique_name: c_phone
+            label: c_phone
+            contains_unique_names: false
+            dataset: customer
+            is_unique_key: false
+            key_columns:
+              - c_phone
+            name_column: c_phone
+          - unique_name: c_acctbal
+            label: c_acctbal
+            contains_unique_names: false
+            dataset: customer
+            is_unique_key: false
+            key_columns:
+              - c_acctbal
+            name_column: c_acctbal
+          - unique_name: c_comment
+            label: c_comment
+            contains_unique_names: false
+            dataset: customer
+            is_unique_key: false
+            key_columns:
+              - c_comment
+            name_column: c_comment
+          - unique_name: c_address
+            label: c_address
+            contains_unique_names: false
+            dataset: customer
+            is_unique_key: false
+            key_columns:
+              - c_address
+            name_column: c_address
+  - unique_name: Customer by Segment
+    label: Customer by Segment
+    levels:
+      - unique_name: c_mktsegment
+      - unique_name: Customer Name - seg
+level_attributes:
+  - unique_name: Customer Name
+    label: Customer Name
+    contains_unique_names: true
+    dataset: customer
+    is_unique_key: true
+    key_columns:
+      - c_custkey
+    name_column: c_name
+  - unique_name: Customer Name - seg
+    label: Customer Name
+    contains_unique_names: true
+    dataset: customer
+    is_unique_key: true
+    key_columns:
+      - c_custkey
+    name_column: c_name
+  - unique_name: c_mktsegment
+    label: c_mktsegment
+    contains_unique_names: false
+    dataset: customer
+    key_columns:
+      - c_mktsegment
+    name_column: c_mktsegment
+type: standard
